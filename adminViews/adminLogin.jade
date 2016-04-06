@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	.container
+		.row
+			.col-sm-6.col-md-4.col-md-offset-4
+				.account-wall
+					h5.text-center.login-title Cretif	
+						form(class='form-signin', action='/adminLogin', method='POST')
+							input(type='text', name='email' class='form-control', placeholder='Administrative ID',required, autofocus)
+							input(type='password', name='password' class='form-control', placeholder='Password', required)
+							button(class='btn btn-lg btn-primary btn-block', type='submit') Administrative Login

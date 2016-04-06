@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    .container
+        .col-md-10
+          h2 School Info
+          table.table.table-striped
+            #schoolInfo
+                thead
+                    tr
+                        th Label
+                        th Info
+                tbody
+                    tr
+                        td School Name
+                        td schoolInfo.name
+                tbody
+                    tr
+                        td School's Email ID
+                        td schoolInfo.id
+                tbody
+                    tr
+                        td Address
+                        td schoolInfo.address
+                tbody
+                    tr
+                        td Pincode
+                        td schoolInfo.pinCode
+                tbody
+                    tr
+                        td Phone No.
+                        td schoolInfo.phoneNo
+                tbody
+                    tr
+                        td Number of Buses
+                        td schoolInfo.buses
+                tbody
+                    tr
+                        td Number of Students
+                        td schoolInfo.students

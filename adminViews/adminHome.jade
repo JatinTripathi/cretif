@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    .container
+      .row
+        .col-md-12
+            form.input-group(class='form-search', action='/search', method='GET')
+              input#schoolSearch.form-control.input-lg(type='text', placeholder='Registered Schools')
+              span.input-group-btn
+                button.btn.btn-info.btn-lg(type='button')
+                  i.glyphicon.glyphicon-search
+    .container
+      h2 Registration Form
+      form.form-horizontal(role='form')
+        .form-group
+          label.control-label.col-sm-2 School's Name:
+          .col-sm-10
+            input#email.form-control(name='name', placeholder='Complete Name')
+        .form-group
+          label.control-label.col-sm-2 Representative's Email ID:
+          .col-sm-10
+            input#id.form-control(name='id')
+        .form-group
+          label.control-label.col-sm-2 School's Address:
+          .col-sm-10
+            input#address.form-control(name='address', placeholder='Complete Address')
+        .form-group
+          label.control-label.col-sm-2 Pincode:
+          .col-sm-10
+            input#pin.form-control(name='pin')
+        .form-group
+          label.control-label.col-sm-2 Phone No.:
+          .col-sm-10
+            input#phoneNo.form-control(name='phoneNo')
+        .form-group
+          .col-sm-offset-2.col-sm-10
+            button.btn.btn-default(type='submit') Submit
+    script(src='/js/awesomeple.js')
+    script(src='/js/schoolSearch.js')

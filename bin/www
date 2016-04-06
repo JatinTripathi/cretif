@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var adminApp=require('../adminServer');
+var http=require('http');
+
+var adminPort=process.env.port || 8080;
+
+var adminServer = http.createServer(adminApp);
+
+adminServer.listen(adminPort);
